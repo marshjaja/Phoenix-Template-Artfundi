@@ -1,1 +1,122 @@
+body,
+.navbar,
+.dropdown-menu a {
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
 
+/* Navbar Brand and Links */
+.navbar-brand,
+.nav-link,
+.logo a {
+  color: rgb(0, 0, 0) !important;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.navbar .logo {
+  font-size: 36px;
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+/* Navbar Nav */
+.navbar-nav {
+  white-space: nowrap;
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cpath stroke='rgb(25, 25, 112)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Nav Links and Dropdown Items */
+.nav-link,
+.dropdown-item {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+  color: rgb(0, 0, 0) !important;
+  position: relative;
+  background-color: transparent !important;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  color: rgb(0, 0, 0) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.032);
+}
+
+/* Hover Effects */
+.nav-link::after,
+.dropdown-item::after {
+  content: "";
+  position: absolute;
+  background-color: #f59e0b;
+  height: 3px;
+  width: 0;
+  left: 8px;
+  bottom: 0;
+  transition: width 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 90%;
+}
+
+.dropdown-item:hover::after {
+  width: 80%;
+}
+
+.nav-link:not(:last-child)::after {
+  display: none;
+}
+
+.nav-link:not(:last-child):hover {
+  background-color: none;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+  background-color: transparent !important;
+}
+
+/* Custom CSS for dropdown on hover */
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+  }
+}
+/* Media Queries */
+@media (max-width: 991px) {
+  .nav-link:hover,
+  .dropdown-menu .dropdown-item:hover {
+    color: #f59e0b !important;
+    background-color: transparent !important;
+  }
+  .nav-link::after,
+  .dropdown-item::after {
+    display: none;
+  }
+}
+.page-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
