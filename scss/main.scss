@@ -4,13 +4,26 @@
 body {
 	padding-top: 112px;
 	background-color: #ffffff;
-	font-family: "Poppins", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
 	font-style: normal;
+	font-optical-sizing: auto;
 }
 .page-container {
 	max-width: 1400px;
 	margin: 0 auto;
 	padding: 0 20px;
 	width: 100%;
+}
+
+.custom-btn {
+	padding: 8px 25px;
+	color: rgb(255, 255, 255);
+
+	background-color: #800020;
+}
+.custom-btn:hover {
+	color: rgb(0, 0, 0);
+	background-color: #f59e0b;
+	border: 2px solid #f59e0b;
 }
