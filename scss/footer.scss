@@ -1,0 +1,60 @@
+.footer {
+	text-align: left;
+	padding: 4rem 0;
+	background-color: rgba(128, 0, 32, 0.039);
+	display: block;
+}
+
+.footer .footer-background {
+	padding: 4rem 0;
+}
+
+.footer .footer-headers {
+	color: rgb(128, 0, 32) !important;
+	font-size: 16px;
+}
+
+.footer .footer-text {
+	font-family: "Poppins", sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	font-size: 14px;
+}
+
+.footer .social-media .social-icon {
+	color: rgb(128, 0, 32);
+	font-size: 18px;
+	margin-right: 18px;
+	transition: color 0.3s;
+}
+
+.footer .social-media .social-icon:hover {
+	color: rgb(245, 158, 11);
+}
+
+.footer .footer-small-text a {
+	white-space: nowrap;
+	color: #9a9a9a;
+	font-weight: 400;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.footer .footer-small-text a:hover {
+	color: rgb(128, 0, 32);
+}
+
+.powered_by {
+	margin: 20px 0 30px;
+	padding: 30px;
+}
+.powered_by a {
+	color: #9a9a9a;
+	font-size: 11px;
+	font-weight: 100;
+	margin: 0 15px;
+}
+/* NOTE ============== EMAIL SECTION CSS START ==============  */
+.newsletter-input {
+	margin-bottom: 1.5rem;
+}

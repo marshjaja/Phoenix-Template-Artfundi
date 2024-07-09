@@ -1,13 +1,11 @@
-body,
 .navbar,
 .dropdown-menu a {
-	background-color: #ffffff;
+	// background-color: rgb(0, 0, 0);
 	font-family: "Poppins", sans-serif;
 	font-weight: 300;
 	font-style: normal;
 }
 
-/* Navbar Brand and Links */
 .navbar-brand,
 .nav-link,
 .logo a {
@@ -24,12 +22,10 @@ body,
 	font-weight: 500;
 }
 
-/* Navbar Nav */
 .navbar-nav {
 	white-space: nowrap;
 }
 
-/* Navbar Toggler */
 .navbar-toggler {
 	border: none;
 }
@@ -41,31 +37,26 @@ body,
 }
 
 .navbar-light .navbar-toggler-icon {
-	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cpath stroke='rgb(25, 25, 112)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cpath stroke='rgb(128, 0, 32)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/* Nav Links and Dropdown Items */
 .nav-link,
 .dropdown-item {
 	transition: background-color 0.3s ease, color 0.3s ease;
 	border-radius: 5px;
-	color: rgb(0, 0, 0) !important;
+	color: rgb(245, 158, 11) !important;
 	position: relative;
 	background-color: transparent !important;
 }
-
-/* Dropdown Menu */
 .dropdown-menu {
-	color: rgb(0, 0, 0) !important;
+	background-color: rgb(255, 255, 255);
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.032);
 }
-
-/* Hover Effects */
 .nav-link::after,
 .dropdown-item::after {
 	content: "";
 	position: absolute;
-	background-color: #f59e0b;
+	background-color: rgb(128, 0, 32);
 	height: 3px;
 	width: 0;
 	left: 8px;
