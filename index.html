@@ -12,6 +12,11 @@
 		/>
 		<link
 			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css"
+			type="text/css"
+		/>
+		<link
+			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
 		/>
 		<link
@@ -25,9 +30,7 @@
 	<body>
 		<div class="">
 			<header>
-				<nav
-					class="navbar fixed-top navbar-expand-lg navbar-light page-container"
-				>
+				<nav class="navbar fixed-top navbar-expand-lg navbar-light">
 					<div class="container py-4">
 						<a class="navbar-brand" href="/index.html">
 							<div class="logo">Your Logo</div>
@@ -122,8 +125,59 @@
 				</nav>
 			</header>
 		</div>
-		<section>
-			<div class="page-container"></div>
+		<section id="hero-section">
+			<div class="carousel swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="https://via.placeholder.com/600x400?text=Image+1" />
+					</div>
+					<div class="swiper-slide">
+						<img src="https://via.placeholder.com/600x400?text=Image+1" />
+					</div>
+					<div class="swiper-slide">
+						<img src="https://via.placeholder.com/600x400?text=Image+1" />
+					</div>
+					<div class="swiper-slide">
+						<img src="https://via.placeholder.com/600x400?text=Image+1" />
+					</div>
+					<div class="swiper-slide">
+						<img src="https://via.placeholder.com/600x400?text=Image+1" />
+					</div>
+					<div class="swiper-slide">
+						<img src="https://via.placeholder.com/600x400?text=Image+1" />
+					</div>
+					<div class="swiper-slide">
+						<img src="https://via.placeholder.com/600x400?text=Image+1" />
+					</div>
+					<div class="swiper-slide">
+						<img src="https://via.placeholder.com/600x400?text=Image+1" />
+					</div>
+					<div class="swiper-slide">
+						<img src="https://via.placeholder.com/600x400?text=Image+1" />
+					</div>
+					<div class="swiper-slide">
+						<img src="https://via.placeholder.com/600x400?text=Image+1" />
+					</div>
+				</div>
+				<div class="left-text">
+					<h2 class="headline-text">
+						"Art is never finished, only abandoned. - Leonardo da Vinci"
+					</h2>
+					<p>Intro text</p>
+				</div>
+				<div class="right-numbers">
+					<span data-index="0">1</span>
+					<span data-index="1">2</span>
+					<span data-index="2">3</span>
+					<span data-index="3">4</span>
+					<span data-index="4">5</span>
+					<span data-index="5">6</span>
+					<span data-index="6">7</span>
+					<span data-index="7">8</span>
+					<span data-index="8">9</span>
+					<span data-index="9">10</span>
+				</div>
+			</div>
 		</section>
 		<!-- ================== NEWS LETTER SIGNUP SECTION START ================== -->
 		<div id="newsletterSignup" class="dark" style="padding: 3rem">
@@ -275,5 +329,8 @@
 			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 			crossorigin="anonymous"
 		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script>
+
+		<script src="/js/hero-section.js"></script>
 	</body>
 </html>

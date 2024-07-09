@@ -1,0 +1,112 @@
+.carousel {
+	position: relative;
+	height: 85vh;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.carousel img {
+	width: 100%;
+	height: 85vh;
+	object-fit: cover;
+}
+
+.left-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: rgb(0, 0, 0);
+	z-index: 1;
+}
+
+.left-text h2,
+.left-text p {
+	margin: 0;
+}
+
+.left-text h2 {
+	margin-bottom: 10px;
+}
+
+.right-numbers {
+	position: absolute;
+	bottom: 60px;
+	right: 50px;
+	color: white;
+	z-index: 10;
+}
+
+.right-numbers span {
+	cursor: pointer;
+	position: relative;
+	margin: 0 10px;
+}
+
+.right-numbers span:hover::before,
+.right-numbers span.active::before {
+	content: "";
+	display: block;
+	width: 35px;
+	height: 35px;
+	border: 2px solid white;
+	background-color: #800020;
+	border-radius: 50%;
+	z-index: -1;
+	position: absolute;
+	top: -7px;
+	left: -13px;
+}
+
+.right-numbers span.active:last-child::before,
+.right-numbers span:hover:last-child::before {
+	left: -9px;
+}
+
+.headline-text {
+	font-size: 50px;
+	text-wrap: nowrap;
+	height: 100px;
+	padding: 20px;
+	background: rgba(255, 255, 255, 0.074);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5.1px);
+	-webkit-backdrop-filter: blur(5.1px);
+	border: 1px solid rgba(255, 255, 255, 0.49);
+}
+
+@media (max-width: 1400px) {
+	.headline-text {
+		font-size: 40px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.headline-text {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 992px) {
+	.headline-text {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	.headline-text {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 600px) {
+	.headline-text {
+		font-size: 15px;
+		height: 70px;
+		padding: 20px;
+	}
+}
