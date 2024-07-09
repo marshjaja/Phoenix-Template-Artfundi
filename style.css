@@ -1,3 +1,11 @@
+.navbar,
+.dropdown-menu a {
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
 .navbar-brand,
 .nav-link,
 .logo a {
@@ -80,7 +88,14 @@
   color: #f59e0b !important;
 }
 
-/* Custom CSS for dropdown on hover */
+.navbar {
+  background-color: #ffffff !important;
+}
+
+.dropdown-menu {
+  background-color: #ffffff !important;
+}
+
 @media (min-width: 992px) {
   .nav-item.dropdown:hover .dropdown-menu {
     display: block;
@@ -88,12 +103,11 @@
     border: 1px solid rgba(0, 0, 0, 0.15);
   }
 }
-/* Media Queries */
 @media (max-width: 991px) {
   .nav-link:hover,
   .dropdown-menu .dropdown-item:hover {
     color: #f59e0b !important;
-    background-color: transparent !important;
+    background-color: rgb(255, 255, 255) !important;
   }
   .nav-link::after,
   .dropdown-item::after {
@@ -101,10 +115,7 @@
   }
 }
 .footer {
-  text-align: left;
-  padding: 4rem 0;
   background-color: rgba(128, 0, 32, 0.039);
-  display: block;
 }
 
 .footer .footer-background {
