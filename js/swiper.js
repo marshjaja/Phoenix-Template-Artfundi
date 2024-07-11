@@ -17,25 +17,31 @@ document.addEventListener("DOMContentLoaded", function () {
 		},
 	});
 
-	// Add click event listeners to custom span elements
 	const $numbers = document.querySelectorAll(".right-numbers span");
+	const carousel = document.querySelector("#heroCarousel");
+	const carouselInstance = new bootstrap.Carousel(carousel);
 
 	$numbers.forEach((number, i) => {
 		number.addEventListener("click", function () {
-			swiper.slideToLoop(i, 1000); // Use Swiper's slideTo method
+			carouselInstance.to(i); // Use Bootstrap's carousel method
+			updateIndicators(i);
 		});
 	});
 
-	// Update active class on custom span elements based on Swiper's active index
-	swiper.on("slideChange", function () {
-		const currentIndex = swiper.realIndex;
-		$numbers.forEach((number, i) => {
-			number.classList.toggle("active", i === currentIndex);
-		});
+	carousel.addEventListener("slid.bs.carousel", function (event) {
+		const currentIndex = event.to;
+		updateIndicators(currentIndex);
 	});
+
+	function updateIndicators(index) {
+		$numbers.forEach((number, i) => {
+			number.classList.toggle("active", i === index);
+		});
+	}
 
 	// Initially set the active class on the first number
-	$numbers[0].classList.add("active");
+	updateIndicators(0);
+
 	// NOTE
 	//?  ========== Initialize Latest Swiper ===========
 	//?  ========== Initialize Latest Swiper ===========
