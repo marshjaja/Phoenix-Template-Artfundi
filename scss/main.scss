@@ -2,6 +2,7 @@
 @import "footer";
 @import "hero-section";
 @import "swiper";
+@import "work-cards";
 
 body {
 	padding-top: 112px;
@@ -13,11 +14,14 @@ body {
 }
 .page-container {
 	max-width: 1400px;
-	margin: 0 auto;
+	margin: 50px auto;
+
 	padding: 0 20px;
 	width: 100%;
 }
-
+.page-container a {
+	text-decoration: none;
+}
 .custom-btn {
 	padding: 8px 25px;
 	color: rgb(255, 255, 255);
@@ -28,4 +32,35 @@ body {
 	color: rgb(0, 0, 0);
 	background-color: #f59e0b;
 	border: 2px solid #f59e0b;
+}
+.enquire-button {
+	margin-top: 20px;
+}
+
+.first {
+	color: #888;
+	font-size: 14px;
+	margin: 8px 0 0;
+}
+.title {
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+	color: #800020;
+	display: -webkit-box;
+	font-size: 16px;
+	line-height: 25px;
+	margin: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
+}
+
+.third {
+	color: #888;
+	font-size: 14px;
+}
+.artist-card img {
+	min-width: 100%;
+	height: 250px !important;
+	object-fit: cover;
 }
