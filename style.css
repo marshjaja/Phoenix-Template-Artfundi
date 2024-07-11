@@ -184,7 +184,7 @@
   object-fit: cover;
 }
 
-.left-text {
+.big-hero-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -194,12 +194,12 @@
   z-index: 1;
 }
 
-.left-text h2,
-.left-text p {
+.big-hero-text h2,
+.big-hero-text p {
   margin: 0;
 }
 
-.left-text h2 {
+.big-hero-text h2 {
   margin-bottom: 10px;
 }
 
@@ -240,14 +240,21 @@
 .headline-text {
   font-size: 50px;
   text-wrap: nowrap;
-  height: 100px;
-  padding: 20px;
+  height: 150px;
+  padding: 40px;
   background: rgba(255, 255, 255, 0.074);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.1px);
   -webkit-backdrop-filter: blur(5.1px);
   border: 1px solid rgba(255, 255, 255, 0.49);
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #ccc;
 }
 
 @media (max-width: 1400px) {
@@ -258,23 +265,29 @@
 @media (max-width: 1200px) {
   .headline-text {
     font-size: 30px;
+    height: 110px;
+    padding: 30px;
   }
 }
 @media (max-width: 992px) {
   .headline-text {
     font-size: 30px;
+    height: 100px;
+    padding: 30px;
   }
 }
 @media (max-width: 768px) {
   .headline-text {
     font-size: 20px;
+    height: 70px;
+    padding: 20px;
   }
 }
 @media (max-width: 600px) {
   .headline-text {
     font-size: 15px;
     height: 70px;
-    padding: 20px;
+    padding: 25px;
   }
 }
 .card {
@@ -350,9 +363,11 @@ body {
 }
 
 .custom-btn {
-  padding: 8px 25px;
+  padding: 8px 23px;
   color: rgb(255, 255, 255);
   background-color: #800020;
+  border: 2px solid #800020;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .custom-btn:hover {

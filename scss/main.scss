@@ -23,16 +23,19 @@ body {
 	text-decoration: none;
 }
 .custom-btn {
-	padding: 8px 25px;
+	padding: 8px 23px;
 	color: rgb(255, 255, 255);
-
 	background-color: #800020;
+	border: 2px solid #800020;
+	transition: background-color 0.3s, color 0.3s;
 }
+
 .custom-btn:hover {
 	color: rgb(0, 0, 0);
 	background-color: #f59e0b;
 	border: 2px solid #f59e0b;
 }
+
 .enquire-button {
 	margin-top: 20px;
 }

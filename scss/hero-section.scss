@@ -13,7 +13,8 @@
 	object-fit: cover;
 }
 
-.left-text {
+// =========== BIG HERO TEXT ===========
+.big-hero-text {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -23,15 +24,16 @@
 	z-index: 1;
 }
 
-.left-text h2,
-.left-text p {
+.big-hero-text h2,
+.big-hero-text p {
 	margin: 0;
 }
 
-.left-text h2 {
+.big-hero-text h2 {
 	margin-bottom: 10px;
 }
 
+// =========== NUMBERS ON HERO ===========
 .right-numbers {
 	position: absolute;
 	bottom: 60px;
@@ -65,18 +67,25 @@
 .right-numbers span:hover:last-child::before {
 	left: -9px;
 }
-
+// =========== BIG TEXT ON HERO ===========
 .headline-text {
 	font-size: 50px;
 	text-wrap: nowrap;
-	height: 100px;
-	padding: 20px;
+	height: 150px;
+	padding: 40px;
 	background: rgba(255, 255, 255, 0.074);
 	border-radius: 16px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5.1px);
 	-webkit-backdrop-filter: blur(5.1px);
 	border: 1px solid rgba(255, 255, 255, 0.49);
+}
+// =========== SMALL TEXT ON HERO IMAGES ===========
+.hero-text {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	color: #ccc;
 }
 
 @media (max-width: 1400px) {
@@ -88,18 +97,24 @@
 @media (max-width: 1200px) {
 	.headline-text {
 		font-size: 30px;
+		height: 110px;
+		padding: 30px;
 	}
 }
 
 @media (max-width: 992px) {
 	.headline-text {
 		font-size: 30px;
+		height: 100px;
+		padding: 30px;
 	}
 }
 
 @media (max-width: 768px) {
 	.headline-text {
 		font-size: 20px;
+		height: 70px;
+		padding: 20px;
 	}
 }
 
@@ -107,6 +122,6 @@
 	.headline-text {
 		font-size: 15px;
 		height: 70px;
-		padding: 20px;
+		padding: 25px;
 	}
 }
