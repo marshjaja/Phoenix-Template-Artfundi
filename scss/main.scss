@@ -64,3 +64,20 @@ body {
 	height: 250px !important;
 	object-fit: cover;
 }
+
+.vr-block {
+	margin-top: 75px;
+	margin-bottom: 30px;
+}
+// .vr-block img {
+// 	background-repeat: no-repeat;
+// 	background-position: center;
+// 	min-width: 10%;
+// 	min-height: 400px;
+// }
+
+@media (min-width: 768px) {
+	// .card-body {
+	// 	padding: 3rem;
+	// }
+}

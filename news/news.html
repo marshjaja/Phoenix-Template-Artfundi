@@ -26,6 +26,13 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="/style.css" />
+		<style>
+			.news-card img {
+				min-width: 100%;
+				height: 200px !important;
+				object-fit: cover;
+			}
+		</style>
 	</head>
 	<body>
 		<header>
@@ -125,7 +132,118 @@
 
 		<!-- ============================  PAGE SECTION START ===================== -->
 		<section>
-			<div class="page-container"></div>
+			<div class="page-container">
+				<div class="container">
+					<div class="container af-grid mb-5">
+						<div
+							class="d-flex flex-column flex-md-row justify-content-between align-items-center my-4 py-3"
+						>
+							<h1
+								class="page-title text-center text-md-left"
+								data-aos="zoom-in-down"
+							>
+								News
+							</h1>
+							<div
+								class="button-container mt-3 mt-md-0 d-flex flex-column flex-md-row w-100 w-md-auto justify-content-center justify-content-md-end"
+							>
+								<button
+									type="button"
+									class="btn custom-btn mx-md-1"
+									id="revealButton"
+								>
+									Search
+								</button>
+								<button
+									type="button"
+									class="btn custom-btn mx-md-1"
+									id="revealButton1"
+								>
+									Filter
+								</button>
+							</div>
+						</div>
+					<div class="row">
+						<div
+							class="col-12 col-md-6 col-lg-3 artist-row"
+							data-aos="zoom-in-down"
+							data-aos-duration="1000"
+						>
+							<a href="/news/news-example.html">
+								<div class="card news-card border-0 rounded-0 p-0">
+									<div class="card-block">
+										<img
+											class="lazyload img-fluid"
+											src="https://via.placeholder.com/600x400?text=Image+1"
+										/>
+										<p class="first">News</p>
+										<p class="title">Article name</p>
+										<p class="third">June 28, 2024</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div
+							class="col-12 col-md-6 col-lg-3 artist-row"
+							data-aos="zoom-in-down"
+							data-aos-duration="1200"
+						>
+							<a href="/news/news-example.html">
+								<div class="card news-card border-0 rounded-0 p-0">
+									<div class="card-block">
+										<img
+											class="lazyload img-fluid"
+											src="https://via.placeholder.com/600x400?text=Image+2"
+										/>
+										<p class="first">News</p>
+										<p class="title">Article name</p>
+										<p class="third">June 28, 2024</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div
+							class="col-12 col-md-6 col-lg-3 artist-row"
+							data-aos="zoom-in-down"
+							data-aos-duration="1400"
+						>
+							<a href="/news/news-example.html">
+								<div class="card news-card border-0 rounded-0 p-0">
+									<div class="card-block">
+										<img
+											class="lazyload img-fluid"
+											src="https://via.placeholder.com/600x400?text=Image+3"
+										/>
+										<p class="first">News</p>
+										<p class="title">Article name</p>
+										<p class="third">June 28, 2024</p>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div
+							class="col-12 col-md-6 col-lg-3 artist-row"
+							data-aos="zoom-in-down"
+							data-aos-duration="1600"
+						>
+							<a href="/news/news-example.html">
+								<div class="card news-card border-0 rounded-0 p-0">
+									<div class="card-block">
+										<img
+											class="lazyload img-fluid"
+											src="https://via.placeholder.com/600x400?text=Image+4"
+										/>
+										<p class="first">News</p>
+										<p class="title">Article name</p>
+										<p class="third">June 28, 2024</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 		<!-- ============================  PAGE SECTION END ===================== -->
 

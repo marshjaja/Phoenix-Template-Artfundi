@@ -394,3 +394,8 @@ body {
   height: 250px !important;
   object-fit: cover;
 }
+
+.vr-block {
+  margin-top: 75px;
+  margin-bottom: 30px;
+}
