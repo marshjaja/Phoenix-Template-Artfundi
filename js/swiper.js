@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	$numbers.forEach((number, i) => {
 		number.addEventListener("click", function () {
-			carouselInstance.to(i); // Use Bootstrap's carousel method
+			carouselInstance.to(i);
 			updateIndicators(i);
 		});
 	});
@@ -39,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}
 
-	// Initially set the active class on the first number
 	updateIndicators(0);
 
 	// NOTE

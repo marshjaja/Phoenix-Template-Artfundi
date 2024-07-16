@@ -414,3 +414,14 @@ body {
   margin-top: 75px;
   margin-bottom: 30px;
 }
+
+.viewing-room .full-w-banner {
+  background-position: center;
+  background-size: cover;
+  height: calc(80vh - 80px);
+  min-height: 400px;
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
